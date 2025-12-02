@@ -20,6 +20,7 @@ Simple React frontend that displays employee data from a local JSON file.
    1. React.js
    2. javascript
    3. Json
+   4. Html,css
       
 ## Notes
 - To adapt to a REST API, replace the local `employees.json` import with a fetch call in `App.jsx`:
