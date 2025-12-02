@@ -26,10 +26,11 @@ Simple React frontend that displays employee data from a local JSON file.
 useEffect(() => {
   fetch('/api/employees').then(r=>r.json()).then(setEmployees)
 }, []);
+
 ## How to Run
-1. Clone the project
-   https://github.com/sanibionasrikanth/employeesdata.git
-2. Install dependencies
-   npm install
-3. Start the project
-   npm run dev
+   1. Clone the project
+      https://github.com/sanibionasrikanth/employeesdata.git
+   2. Install dependencies
+      npm install
+   3. Start the project
+      npm run dev
