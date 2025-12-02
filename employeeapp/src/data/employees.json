@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Anita Sharma", "role": "Frontend Developer", "salary": 25000 },
+  { "id": 2, "name": "Ravi Kumar", "role": "Backend Developer", "salary": 52000 },
+  { "id": 3, "name": "Meera Patel", "role": "Full Stack Developer", "salary": 60000 },
+  { "id": 4, "name": "Sanjay Rao", "role": "QA Engineer", "salary": 40000 },
+  { "id": 5, "name": "Latha Nair", "role": "UI/UX Designer", "salary": 42000 },
+  { "id": 6, "name": "Vikram Singh", "role": "DevOps Engineer", "salary": 58000 }
+]

@@ -1,0 +1,89 @@
+:root{
+  --bg:hsl(62, 63%, 45%);
+  --card:#ffffff;
+  --accent:#2563eb;
+  --muted:#644bf3;
+} 
+
+
+*{
+  box-sizing:border-box;
+  font-family:Inter, system-ui, Arial, sans-serif}
+  body{margin:0;background:var(--bg);
+  color:#111;
+}
+
+.app-container{
+  max-width:1000px;
+  margin:36px auto;
+  padding:22px;
+  background:transparent;
+}
+
+header{margin-bottom:18px}
+h1{margin:0;font-size:35px;}
+.subtitle{margin:6px 0 0;
+ color:var(--muted)
+}
+
+.controls{
+  display:flex;
+  gap:10px;
+  align-items:
+  center;margin:18px 0 14px;
+  flex-wrap:wrap;
+}
+
+.controls input[type="text"],
+.controls input[type="number"],
+.controls select{
+  padding:8px 10px;
+  border-radius:8px;
+  border:1px solid #e6e9ef;
+  background:#fff;
+  min-width:170px;
+}
+
+.controls button{
+  padding:8px 12px;
+  border-radius:8px;
+  border:none;
+  background:var(--accent);
+  color:#fff;
+  cursor:pointer;
+}
+
+.table-wrapper{
+  background:var(--card);
+  padding:12px;
+  border-radius:12px;
+  box-shadow:0 4px 14px rgba(29, 29, 176, 0.06);
+}
+
+.employee-table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:15px;
+}
+.employee-table th, .employee-table td{
+  padding:12px 10px;
+  text-align:left;
+  border-bottom:1px solid #eef2f6;
+}
+.employee-table th{
+  background:transparent;
+  color:var(--muted);
+  font-weight:600;
+  font-size:13px;
+}
+.employee-table tbody tr:hover{
+  background:#fbfcff;
+}
+.empty{
+  padding:18px;background:var(--card);
+  border-radius:10px;color:var(--muted);
+}
+
+footer{margin-top:14px;color:var(--muted)}
+
+
