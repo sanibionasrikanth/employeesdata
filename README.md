@@ -17,9 +17,9 @@ Simple React frontend that displays employee data from a local JSON file.
 5. `npm run dev`
 6. Open the URL shown in terminal (e.g. `http://localhost:5173`).
 ## Technologies Used
-   React.js
-   javascript
-   Json
+   1. React.js
+   2. javascript
+   3. Json
 ## Notes
 - To adapt to a REST API, replace the local `employees.json` import with a fetch call in `App.jsx`:
 ```js
