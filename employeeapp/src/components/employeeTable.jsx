@@ -17,9 +17,9 @@ export default function EmployeeTable({ employees = [] }) {
           </tr>
         </thead>
         <tbody>
-          {employees.map((emp, idx) => (
+          {employees.map((emp) => (
             <tr key={emp.id}>
-              <td>{idx + 1}</td>
+              <td>{emp.id}</td>
               <td>{emp.name}</td>
               <td>{emp.role}</td>
               <td>{Number(emp.salary).toLocaleString()}</td>

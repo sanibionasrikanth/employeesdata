@@ -17,7 +17,8 @@ export default function App() {
     const matchesQuery =
       q === "" ||
       e.name.toLowerCase().includes(q) ||
-      e.role.toLowerCase().includes(q);
+      e.role.toLowerCase().includes(q) ||
+       String(e.id)===q;
 
     const matchesMinSalary =
       minSalary === "" || Number(e.salary) >= Number(minSalary);
@@ -28,16 +29,17 @@ export default function App() {
   });
 
   return (
-    <div className="app-container">
+     <div className="app-container">
       <header>
         <h1>Employees Data</h1>
         <p className="subtitle">Simple React app showing employee data</p>
       </header>
+     
 
       <section className="controls">
         <input
           type="text"
-          placeholder="Search by name..."
+          placeholder="Search by name or id..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
