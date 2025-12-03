@@ -1,9 +1,44 @@
 :root{
-  --bg:hsl(62, 63%, 45%);
+  
+  --bg:#1E293B;
   --card:#ffffff;
   --accent:#2563eb;
   --muted:#644bf3;
 } 
+
+.app-container {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+.app-container.dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+input, select, table {
+  border: 1px solid #ccc;
+}
+
+.app-container.dark input,
+.app-container.dark select,
+.app-container.dark table {
+  background: #333;
+  color: #159637;
+  border-color: #555;
+  
+}
+
+.dark-toggle {
+  padding: 8px 12px;
+  cursor: pointer;
+  right: 25%;
+  top: 152px;
+  position: absolute;
+  border-radius: 7px;
+}
+
 
 *{
   box-sizing:border-box;
@@ -76,7 +111,7 @@ h1{margin:0;font-size:35px;}
   font-size:13px;
 }
 .employee-table tbody tr:hover{
-  background:#fbfcff;
+  background:#e6e9ef;
 }
 .empty{
   padding:18px;background:var(--card);

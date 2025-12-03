@@ -7,6 +7,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [minSalary, setMinSalary] = useState("");
   const [roleFilter, setRoleFilter] = useState("");
+  const [darkMode, setDarkMode] = useState(false);
 
   
   const roles = Array.from(new Set(employees.map((e) => e.role))).sort();
@@ -29,10 +30,18 @@ export default function App() {
   });
 
   return (
-     <div className="app-container">
+    <div className={`app-container${darkMode ? " dark" : ""}`}>
       <header>
         <h1>Employees Data</h1>
         <p className="subtitle">Simple React app showing employee data</p>
+        <button
+          type="button"
+          className="dark-toggle"
+          onClick={() => setDarkMode(prev => !prev)}
+        >
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
+
       </header>
      
 
